@@ -27,7 +27,7 @@ public class swipe : MonoBehaviour
 
         if (runIt)
         {
-            GecisiDuzenle(distance, pos, takeTheBtn);
+            SmoothTransition(distance, pos, takeTheBtn);
             time += Time.deltaTime;
 
             if (time > 1f)
@@ -81,7 +81,7 @@ public class swipe : MonoBehaviour
 
     }
 
-    private void GecisiDuzenle(float distance, float[] pos, Button btn)
+    private void SmoothTransition(float distance, float[] pos, Button btn)
     {
         // btnSayi = System.Int32.Parse(btn.transform.name);
 
