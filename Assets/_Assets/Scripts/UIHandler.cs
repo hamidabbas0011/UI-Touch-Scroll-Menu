@@ -25,7 +25,7 @@ public class UIHandler : MonoBehaviour
         }
     }
 
-    void Update()
+    void FixedUpdate()
     {
         // Smoothly transition to the target position if transitioning
         if (isTransitioning)
@@ -39,7 +39,7 @@ public class UIHandler : MonoBehaviour
         }
     }
 
-    public void SwitchMenu(Button clickedButton)
+    private void SwitchMenu(Button clickedButton)
     {
         int index = clickedButton.transform.GetSiblingIndex();
         if (index >= 0 && index < menuPanels.Length)
